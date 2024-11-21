@@ -73,7 +73,12 @@ def victoryScreen(player):
 
 
 
-#This will be where you make the main game loop.
+#This will be where you make the main game loop. 
 while running:
+
+
+    #This is so it runs at 60 frames a second
+    dt = clock.tick(60) / 1000
+
     pass
 
