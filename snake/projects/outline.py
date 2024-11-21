@@ -14,16 +14,18 @@ dt = 0
 #this is for the while loop
 running = True
 
-#This is one way of doing it, I think there is a .getwidth and a ,getheight method you can  try out as well.
+#This is one way of doing it, I think there is a .getwidth and a .getheight method you can  try out as well.
 #This way you have to choose the first index for x and second index for y sin the value it returns is a 2 size array.
 ball_posx = pygame.display.get_window_size()[0]/2
 ball_posy = pygame.display.get_window_size()[1]/2
 ball_changex = random.randint(4,5)
 ball_changey = random.randint(1,3)
+ 
 player1y = pygame.display.get_window_size()[1]/2
 player2y = pygame.display.get_window_size()[1]/2
 player1x = 30
 player2x = 1220
+#notice there is no xchange for players
 player1y_change = 0
 player2y_change = 0
 
@@ -33,8 +35,8 @@ player1points = 0
 player2points = 0
 
 #Hint, this is straight forward dont overthink things, also second hint, return ballx,bally at the end
-#Dont forget in python you can return multiple things at once. you just need to make it be like
-# x,y = moveBall() (this is where you call the function)
+#Dont forget in python you can return multiple things at once
+
 #where x,y will be the variables that you have your return feed into.
 def moveBall(ballx,bally,ballx_change,bally_change):
     
@@ -53,7 +55,7 @@ def ballWallCollision(ballx,bally, ballx_change, bally_change):
 def playerWallCollision(playery):
     pass
 #Hint, dont get overwhelmed by the amount of parameters in it, just think about each part separately and how it fits together.
-#What is ultimately the goal of this function?
+#What is ultimately the goal of this function? (you will be returning 2 values)
 def playerBallCollision(playerx,playery,ballx,bally,ballx_change,bally_change):
     pass
 
