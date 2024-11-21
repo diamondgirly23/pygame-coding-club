@@ -4,8 +4,9 @@ import random
 pygame.init()
 pygame.font.init()
 #how to make a font?
-screen = pygame.display.set_mode((1280,720))
 
+screen = pygame.display.set_mode((1280,720))
+#This object is for making game run smoother
 clock = pygame.time.Clock()
 running = True
 dt = 0
