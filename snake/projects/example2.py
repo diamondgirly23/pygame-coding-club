@@ -8,7 +8,9 @@ while running:
         if event.type == pygame.QUIT:
             running = False
             continue
-        #add if statements to take in user input.
+        #add if statements to take in user input. (make one for when a key is pressed and one when it is let go)
+
+        #within the two if statements you should add nested if statements to determine which key was pressed
         #hint look at event types and event keys.
     screen.fill("black")
 
